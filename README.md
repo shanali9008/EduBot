@@ -1,10 +1,10 @@
-# EduBot 📚🤖
+# EduBot
 
-Ask questions about a PDF book or a YouTube video, and get answers based only on that content.
+A study buddy, ask questions and get answers accordingly.
 
-You upload a PDF or paste a YouTube link, EduBot reads it, and then you can
+You upload a PDF/book or paste a YouTube link, EduBot reads it, and then you can
 ask it questions in plain English. It only answers from what's actually in
-the source — if the answer isn't there, it says so instead of guessing.
+the source.
 
 ## How it works
 
@@ -23,19 +23,16 @@ source.
 
 ## Project structure
 
-```
-.
-├── api.py            # FastAPI backend — upload & chat endpoints
-├── app.py             # Streamlit frontend
-├── rag_pipeline.py    # Loading, chunking, embeddings, vector search
-├── llm.py             # Prompt + Groq LLM call
-└── requirements.txt
-```
+app.py             (Streamlit frontend)---
+api.py             (FastAPI backend — upload & chat endpoints )---
+llm.py             (Prompt + Groq LLM call)---
+rag_pipe.py        (Loading, chunking, embeddings, vector search)---
+requirements.txt
 
 ## Setup
 
 1. Install dependencies:
-   ```bash
+   ```
    pip install -r requirements.txt
    ```
 
