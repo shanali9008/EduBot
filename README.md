@@ -1,4 +1,4 @@
-# EduBot
+# EduBuddy
 
 A study buddy, ask questions and get answers accordingly.
 
